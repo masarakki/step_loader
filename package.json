@@ -1,0 +1,26 @@
+{
+  "name": "step_loader",
+  "version": "1.0.0",
+  "description": "step-by-step resource loader",
+  "main": "lib/step_loader.js",
+  "repository": "git://github.com/masarakki/step_loader",
+  "author": "masarakki",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava",
+    "ava": "NODE_ENV=development NODE_PATH=src ava"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.22.2",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-latest": "^6.22.0"
+  },
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ],
+    "babel": "inherit",
+    "verbose": "true"
+  }
+}
